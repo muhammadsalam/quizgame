@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+:root {
+  --dark: #151E27;
+  --dark-2: #1D2733;
+  --border: #4C4C4C;
+  --gray: #898A8D;
+}
+
+@theme inline {
+  --color-dark: var(--dark);
+  --color-dark-2: var(--dark-2);
+  --color-border: var(--border);
+  --color-gray: var(--gray);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--dark);
+}
