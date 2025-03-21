@@ -5,6 +5,7 @@
   --dark-2: #1D2733;
   --border: #4C4C4C;
   --gray: #898A8D;
+  --white: #fff;
 }
 
 @theme inline {
@@ -17,4 +18,6 @@
 body {
   min-height: 100vh;
   background-color: var(--dark);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
 }

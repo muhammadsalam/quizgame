@@ -5,7 +5,7 @@ export const http = axios.create({
     baseURL: import.meta.env.VITE_API_BACK,
 })
 
-axios.interceptors.request.use(config => {
+http.interceptors.request.use(config => {
     const { token } = useUserStore.getState(); // Получаем текущий токен из Zustand
     if (token) {
         config.headers.Authorization = `Bearer ${token}`;
